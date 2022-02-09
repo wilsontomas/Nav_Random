@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_randomizer"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.nav_random.FirstFragment"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_diceFragment"
+            app:destination="@id/diceFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_rollFragment"
+            app:destination="@id/rollFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rollFragment"
+        android:name="com.example.nav_random.RollFragment"
+        android:label="fragment_roll"
+        tools:layout="@layout/fragment_roll" >
+        <action
+            android:id="@+id/action_rollFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.example.nav_random.DiceFragment"
+        android:label="fragment_dice"
+        tools:layout="@layout/fragment_dice" >
+        <action
+            android:id="@+id/action_diceFragment_to_firstFragment"
+            app:destination="@id/firstFragment" />
+    </fragment>
+</navigation>

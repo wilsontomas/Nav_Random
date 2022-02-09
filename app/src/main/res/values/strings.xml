@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nav_Random</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Menu">Select an option</string>
+    <string name="Roll_Dice">Roll Dice</string>
+    <string name="Roll_Dice_btn">Roll</string>
+    <string name="Flip_Coin">Flip Coin</string>
+    <string name="Flip_Coin_btn">Flip</string>
+    <string name="regresar">Volver</string>
+</resources>
